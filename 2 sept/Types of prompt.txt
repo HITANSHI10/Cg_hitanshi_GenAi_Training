@@ -1,0 +1,37 @@
+Structured Prompting->Role:Act as a senior functional tester Context: We are testing booking of flights on a flight booking application Task:Generate functional test cases for flight details like from city,to city ,date , number of passangers and travel class Constraints: Input: city should include names of city in india where airport is present ,date should be valid. number of passangers should be valid constraints : include functional,negative,positive and bounday cases output:provide the result in a table with test case id, scenerio,steps,test data,expected result.
+
+zero-shot prompting->generate negative test cases for the date of booking
+
+one-shot prompting->generate boundary test cases for the date of booking example yesterday's date is invalid
+
+Few-shot prompting->Classify the following test cases as positive or negative 
+ex-1 udaipur->sikar negative(as there is no airport in sikar)
+ex-2 jaipur->delhi positive
+now tell jaipur-> pune
+
+chain of thought->analyze the code 
+waitfornavigation('')
+analyze: if the wait is unnecessary
+if any prior action is required
+if the locator is correct
+then provide: the issue
+and the easiest fix
+
+self-consistency->act as a senior functional tester 
+and analyze the code
+await page.goto('url')
+analyze the following:
+if the url is correct
+if the fixture used is correct
+if the await is used carefully
+compare all the possibilities and the provide the following
+most likely cause
+recommended fix
+updated code
+
+Prompt chaining->
+ex-1 A customer is trying to book a flight from a flight booking app by giving from and to location date ,number of passangers , travel class list all the functional requirements so that the customer can book a flight
+next-> list all positive, negative and boundary test scenerios with the help of these requirements
+next-> make a table for test case id , preconditions ,test case, expected result from the requirements.
+
+
