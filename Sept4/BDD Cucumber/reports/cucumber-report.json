@@ -1,0 +1,421 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "student-registration-form;submit-registration-form-with-complete-valid-data",
+        "keyword": "Scenario Outline",
+        "line": 50,
+        "name": "Submit registration form with complete valid data",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2049322900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1748324200
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the Student Registration Form page",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 543318800
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "user is on the Student Registration Form page",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 99314900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "user enters name \"John Doe\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43200499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "user enters email \"john@test.com\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 90358099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user selects gender \"Male\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 37334800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "user enters mobile number \"9876543210\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31501699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "user selects date of birth \"1995-08-14\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21806199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user enters subject \"Maths\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 78516100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "user selects hobby \"Sports\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 26389099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user enters address \"Bangalore\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20227399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user selects state \"NCR\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:45"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21588600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user selects city \"Agra\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:49"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29471799
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "submit button should be enabled",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:54"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 596462900
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1494300
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-registration-form;submit-registration-form-with-complete-valid-data",
+        "keyword": "Scenario Outline",
+        "line": 51,
+        "name": "Submit registration form with complete valid data",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1960988499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2090470200
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the Student Registration Form page",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1358305699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "user is on the Student Registration Form page",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 80680899
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "user enters name \"Jane Roy\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 44359100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "user enters email \"jane@test.com\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 88839499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user selects gender \"Female\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27914099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "user enters mobile number \"9876543211\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28963900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "user selects date of birth \"1998-10-05\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32846499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user enters subject \"Physics\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 75890899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "user selects hobby \"Reading\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 34808000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user enters address \"Chennai\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21703900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user selects state \"NCR\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:45"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20898499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user selects city \"Agra\"",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:49"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 13551299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "submit button should be enabled",
+            "match": {
+              "location": "features\\stepDefinitions\\tutorialpoint.ts:54"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 562697000
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1851500
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "student-registration-form",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Student Registration Form",
+    "tags": [],
+    "uri": "features\\tutorialpointlogin.feature"
+  }
+]
