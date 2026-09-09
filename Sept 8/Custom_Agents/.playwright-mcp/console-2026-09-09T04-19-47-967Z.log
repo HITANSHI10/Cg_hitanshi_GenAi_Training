@@ -1,0 +1,5 @@
+[  -59996ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  -54163ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://phptravels.net/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:0
+[  -54159ms] [WARNING] [ROCKET LOADER]  Failed to create activatable copy of script 
+<script defer="" src="https://phptravels.net/assets/js/datepicker.js?v=1788373837" type="1ba450ef26e4a0d4776df23f-text/javascript" cf-marker-23506576866389206=""></script>
+ Script will not be executed. @ https://phptravels.net/assets/js/tailwind.js?v=10.0:10

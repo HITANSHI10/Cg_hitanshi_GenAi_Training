@@ -1,0 +1,40 @@
+- generic [ref=f1e126]:
+  - generic [ref=f1e127]:
+    - generic [ref=f1e128]:
+      - generic [ref=f1e129]:
+        - generic [ref=f1e130]:
+          - button "Open Menu" [ref=f1e131] [cursor=pointer]
+          - img "Open Menu" [ref=f1e132]
+        - generic [ref=f1e133]: Swag Labs
+        - generic [ref=f1e135]: "1"
+      - generic [ref=f1e138]: Your Cart
+    - generic [ref=f1e141]:
+      - generic [ref=f1e142]:
+        - generic [ref=f1e143]: QTY
+        - generic [ref=f1e144]: Description
+        - generic [ref=f1e145]:
+          - generic [ref=f1e146]: "1"
+          - generic [ref=f1e147]:
+            - link "Sauce Labs Backpack" [ref=f1e148] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=f1e150]: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+            - generic [ref=f1e151]:
+              - generic [ref=f1e152]: $29.99
+              - button "Remove" [ref=f1e153] [cursor=pointer]
+      - generic [ref=f1e154]:
+        - button [ref=f1e155] [cursor=pointer]:
+          - img "Go back" [ref=f1e156]
+          - text: Continue Shopping
+        - button "Checkout" [ref=f1e157] [cursor=pointer]
+  - contentinfo [ref=f1e158]:
+    - list [ref=f1e159]:
+      - listitem [ref=f1e160]:
+        - link "Twitter" [ref=f1e161] [cursor=pointer]:
+          - /url: https://twitter.com/saucelabs
+      - listitem [ref=f1e162]:
+        - link "Facebook" [ref=f1e163] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=f1e164]:
+        - link "LinkedIn" [ref=f1e165] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=f1e166]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy

@@ -1,0 +1,5 @@
+[    1744ms] [LOG] https://videogamedb.uk @ https://videogamedb.uk/swagger-ui/springfox.js?v=3.0.4:15
+[    7854ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://videogamedb.uk/api/videogame/999999:0
+[    8422ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://videogamedb.uk/api/videogame/1:0
+[    8665ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://videogamedb.uk/api/videogame/1:0
+[    8910ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://videogamedb.uk/api/videogame:0

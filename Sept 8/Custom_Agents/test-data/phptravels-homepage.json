@@ -1,0 +1,36 @@
+{
+  "homePage": {
+    "brand": {
+      "expectedText": "PHPTRAVELS"
+    },
+    "primaryNavigation": [
+      "Stays",
+      "Flights",
+      "Visa",
+      "Contact",
+      "About",
+      "Support",
+      "Deals",
+      "Travel Documents",
+      "Travel Insurance"
+    ],
+    "authLinks": {
+      "customerLogin": "customer login",
+      "customerSignup": "customer signup",
+      "agentSignup": "agent signup"
+    },
+    "demoNotice": {
+      "keywords": [
+        "prices displayed.*simulated",
+        "sandbox",
+        "data may reset",
+        "supplier credentials"
+      ]
+    },
+    "supportLinks": {
+      "email": "support@phptravels.com",
+      "whatsapp": "+1234567890",
+      "phone": "+1234567890"
+    }
+  }
+}

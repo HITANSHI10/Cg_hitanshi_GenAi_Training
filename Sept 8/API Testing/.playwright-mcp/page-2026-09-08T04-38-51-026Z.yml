@@ -1,0 +1,432 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - img "Swagger UI" [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Select a definition
+      - combobox "Select a definition" [ref=e12]:
+        - option "default" [selected]
+  - generic [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Video Game DB 2022 API 1.0.0 OAS3" [level=2] [ref=e20]:
+          - text: Video Game DB 2022 API
+          - generic [ref=e21]:
+            - generic [ref=e22]: 1.0.0
+            - generic [ref=e24]: OAS3
+        - link "https://videogamedb.uk/v3/api-docs" [ref=e26] [cursor=pointer]:
+          - /url: https://videogamedb.uk/v3/api-docs
+      - paragraph [ref=e30]: This is an API for a simple, fictional Video Game Database. The application is running in READ ONLY mode, which means any changes like creating, updating or deleting games does not get persisted.
+      - link "James Willett - Website" [ref=e33] [cursor=pointer]:
+        - /url: https://james-willett.com
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Servers
+        - combobox [ref=e39]:
+          - option "https://videogamedb.uk:443 - Inferred Url" [selected]
+      - button "Authorize" [ref=e41] [cursor=pointer]
+    - generic [ref=e47]:
+      - heading [level=3] [ref=e50] [cursor=pointer]:
+        - link "api-authentication-controller" [ref=e51]:
+          - /url: "#/api-authentication-controller"
+        - paragraph [ref=e54]: Api Authentication Controller
+        - button "Expand operation" [ref=e55]
+      - generic [ref=e59]:
+        - heading [level=3] [ref=e86] [cursor=pointer]:
+          - link "api-video-games-controller" [ref=e61]:
+            - /url: "#/api-video-games-controller"
+          - paragraph [ref=e64]: Api Video Games Controller
+          - button "Collapse operation" [expanded] [ref=e87]
+        - generic [ref=e89]:
+          - generic [ref=e91]:
+            - button "get /api/videogame" [expanded] [ref=e93] [cursor=pointer]:
+              - generic [ref=e94]: GET
+              - link "/api/videogame" [ref=e96]:
+                - /url: "#/api-video-games-controller/listVideoGamesUsingGET_1"
+              - generic [ref=e98]: List all video games
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - heading "Parameters" [level=4] [ref=e160] [cursor=pointer]
+                  - button "Cancel" [ref=e231] [cursor=pointer]
+                - paragraph [ref=e165]: No parameters
+              - generic [ref=e166]:
+                - button "Execute" [ref=e232] [cursor=pointer]
+                - button "Clear" [ref=e233] [cursor=pointer]
+              - generic [ref=e167]:
+                - generic [ref=e235]:
+                  - heading "Request" [level=3] [ref=e237]
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - heading "Curl" [level=4] [ref=e240]
+                      - button [ref=e242] [cursor=pointer]
+                      - code [ref=e245]:
+                        - generic [ref=e246]: curl -X
+                        - generic [ref=e247]: "'GET'"
+                        - generic [ref=e248]: \
+                        - generic [ref=e250]: "'https://videogamedb.uk:443/api/videogame'"
+                        - generic [ref=e251]: \
+                        - generic [ref=e252]: "-H"
+                        - generic [ref=e253]: "'accept: application/json'"
+                    - generic [ref=e254]:
+                      - heading "Request URL" [level=4] [ref=e255]
+                      - generic [ref=e256]: https://videogamedb.uk:443/api/videogame
+                  - heading "Server response" [level=3] [ref=e259]
+                  - table [ref=e261]:
+                    - rowgroup [ref=e262]:
+                      - row [ref=e263]:
+                        - cell "Code" [ref=e264]
+                        - cell "Details" [ref=e265]
+                    - rowgroup [ref=e266]:
+                      - row [ref=e267]:
+                        - cell "200" [ref=e268]
+                        - cell [ref=e269]:
+                          - generic [ref=e270]:
+                            - heading "Response body" [level=5] [ref=e271]
+                            - generic [ref=e272]:
+                              - generic [ref=e273] [cursor=pointer]: Download
+                              - button [ref=e275] [cursor=pointer]
+                              - code [ref=e277]:
+                                - generic [ref=e278]: "["
+                                - text: "{"
+                                - generic [ref=e280]: "\"id\""
+                                - generic [ref=e281]: ":"
+                                - generic [ref=e282]: "1"
+                                - generic [ref=e283]: ","
+                                - generic [ref=e285]: "\"name\""
+                                - generic [ref=e286]: ":"
+                                - generic [ref=e287]: "\"Resident Evil 4\""
+                                - generic [ref=e288]: ","
+                                - generic [ref=e290]: "\"releaseDate\""
+                                - generic [ref=e291]: ":"
+                                - generic [ref=e292]: "\"2005-10-01 23:59:59\""
+                                - generic [ref=e293]: ","
+                                - generic [ref=e295]: "\"reviewScore\""
+                                - generic [ref=e296]: ":"
+                                - generic [ref=e297]: "85"
+                                - generic [ref=e298]: ","
+                                - generic [ref=e300]: "\"category\""
+                                - generic [ref=e301]: ":"
+                                - generic [ref=e302]: "\"Shooter\""
+                                - generic [ref=e303]: ","
+                                - generic [ref=e305]: "\"rating\""
+                                - generic [ref=e306]: ":"
+                                - generic [ref=e307]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e309]: "\"id\""
+                                - generic [ref=e310]: ":"
+                                - generic [ref=e311]: "2"
+                                - generic [ref=e312]: ","
+                                - generic [ref=e314]: "\"name\""
+                                - generic [ref=e315]: ":"
+                                - generic [ref=e316]: "\"Gran Turismo 3\""
+                                - generic [ref=e317]: ","
+                                - generic [ref=e319]: "\"releaseDate\""
+                                - generic [ref=e320]: ":"
+                                - generic [ref=e321]: "\"2001-03-10 23:59:59\""
+                                - generic [ref=e322]: ","
+                                - generic [ref=e324]: "\"reviewScore\""
+                                - generic [ref=e325]: ":"
+                                - generic [ref=e326]: "91"
+                                - generic [ref=e327]: ","
+                                - generic [ref=e329]: "\"category\""
+                                - generic [ref=e330]: ":"
+                                - generic [ref=e331]: "\"Driving\""
+                                - generic [ref=e332]: ","
+                                - generic [ref=e334]: "\"rating\""
+                                - generic [ref=e335]: ":"
+                                - generic [ref=e336]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e338]: "\"id\""
+                                - generic [ref=e339]: ":"
+                                - generic [ref=e340]: "3"
+                                - generic [ref=e341]: ","
+                                - generic [ref=e343]: "\"name\""
+                                - generic [ref=e344]: ":"
+                                - generic [ref=e345]: "\"Tetris\""
+                                - generic [ref=e346]: ","
+                                - generic [ref=e348]: "\"releaseDate\""
+                                - generic [ref=e349]: ":"
+                                - generic [ref=e350]: "\"1984-06-25 23:59:59\""
+                                - generic [ref=e351]: ","
+                                - generic [ref=e353]: "\"reviewScore\""
+                                - generic [ref=e354]: ":"
+                                - generic [ref=e355]: "88"
+                                - generic [ref=e356]: ","
+                                - generic [ref=e358]: "\"category\""
+                                - generic [ref=e359]: ":"
+                                - generic [ref=e360]: "\"Puzzle\""
+                                - generic [ref=e361]: ","
+                                - generic [ref=e363]: "\"rating\""
+                                - generic [ref=e364]: ":"
+                                - generic [ref=e365]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e367]: "\"id\""
+                                - generic [ref=e368]: ":"
+                                - generic [ref=e369]: "4"
+                                - generic [ref=e370]: ","
+                                - generic [ref=e372]: "\"name\""
+                                - generic [ref=e373]: ":"
+                                - generic [ref=e374]: "\"Super Mario 64\""
+                                - generic [ref=e375]: ","
+                                - generic [ref=e377]: "\"releaseDate\""
+                                - generic [ref=e378]: ":"
+                                - generic [ref=e379]: "\"1996-10-20 23:59:59\""
+                                - generic [ref=e380]: ","
+                                - generic [ref=e382]: "\"reviewScore\""
+                                - generic [ref=e383]: ":"
+                                - generic [ref=e384]: "90"
+                                - generic [ref=e385]: ","
+                                - generic [ref=e387]: "\"category\""
+                                - generic [ref=e388]: ":"
+                                - generic [ref=e389]: "\"Platform\""
+                                - generic [ref=e390]: ","
+                                - generic [ref=e392]: "\"rating\""
+                                - generic [ref=e393]: ":"
+                                - generic [ref=e394]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e396]: "\"id\""
+                                - generic [ref=e397]: ":"
+                                - generic [ref=e398]: "5"
+                                - generic [ref=e399]: ","
+                                - generic [ref=e401]: "\"name\""
+                                - generic [ref=e402]: ":"
+                                - generic [ref=e403]: "\"The Legend of Zelda: Ocarina of Time\""
+                                - generic [ref=e404]: ","
+                                - generic [ref=e406]: "\"releaseDate\""
+                                - generic [ref=e407]: ":"
+                                - generic [ref=e408]: "\"1998-12-10 23:59:59\""
+                                - generic [ref=e409]: ","
+                                - generic [ref=e411]: "\"reviewScore\""
+                                - generic [ref=e412]: ":"
+                                - generic [ref=e413]: "93"
+                                - generic [ref=e414]: ","
+                                - generic [ref=e416]: "\"category\""
+                                - generic [ref=e417]: ":"
+                                - generic [ref=e418]: "\"Adventure\""
+                                - generic [ref=e419]: ","
+                                - generic [ref=e421]: "\"rating\""
+                                - generic [ref=e422]: ":"
+                                - generic [ref=e423]: "\"PG-13\""
+                                - text: "}, {"
+                                - generic [ref=e425]: "\"id\""
+                                - generic [ref=e426]: ":"
+                                - generic [ref=e427]: "6"
+                                - generic [ref=e428]: ","
+                                - generic [ref=e430]: "\"name\""
+                                - generic [ref=e431]: ":"
+                                - generic [ref=e432]: "\"Doom\""
+                                - generic [ref=e433]: ","
+                                - generic [ref=e435]: "\"releaseDate\""
+                                - generic [ref=e436]: ":"
+                                - generic [ref=e437]: "\"1993-02-18 23:59:59\""
+                                - generic [ref=e438]: ","
+                                - generic [ref=e440]: "\"reviewScore\""
+                                - generic [ref=e441]: ":"
+                                - generic [ref=e442]: "81"
+                                - generic [ref=e443]: ","
+                                - generic [ref=e445]: "\"category\""
+                                - generic [ref=e446]: ":"
+                                - generic [ref=e447]: "\"Shooter\""
+                                - generic [ref=e448]: ","
+                                - generic [ref=e450]: "\"rating\""
+                                - generic [ref=e451]: ":"
+                                - generic [ref=e452]: "\"Mature\""
+                                - text: "}, {"
+                                - generic [ref=e454]: "\"id\""
+                                - generic [ref=e455]: ":"
+                                - generic [ref=e456]: "7"
+                                - generic [ref=e457]: ","
+                                - generic [ref=e459]: "\"name\""
+                                - generic [ref=e460]: ":"
+                                - generic [ref=e461]: "\"Minecraft\""
+                                - generic [ref=e462]: ","
+                                - generic [ref=e464]: "\"releaseDate\""
+                                - generic [ref=e465]: ":"
+                                - generic [ref=e466]: "\"2011-12-05 23:59:59\""
+                                - generic [ref=e467]: ","
+                                - generic [ref=e469]: "\"reviewScore\""
+                                - generic [ref=e470]: ":"
+                                - generic [ref=e471]: "77"
+                                - generic [ref=e472]: ","
+                                - generic [ref=e474]: "\"category\""
+                                - generic [ref=e475]: ":"
+                                - generic [ref=e476]: "\"Puzzle\""
+                                - generic [ref=e477]: ","
+                                - generic [ref=e479]: "\"rating\""
+                                - generic [ref=e480]: ":"
+                                - generic [ref=e481]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e483]: "\"id\""
+                                - generic [ref=e484]: ":"
+                                - generic [ref=e485]: "8"
+                                - generic [ref=e486]: ","
+                                - generic [ref=e488]: "\"name\""
+                                - generic [ref=e489]: ":"
+                                - generic [ref=e490]: "\"SimCity 2000\""
+                                - generic [ref=e491]: ","
+                                - generic [ref=e493]: "\"releaseDate\""
+                                - generic [ref=e494]: ":"
+                                - generic [ref=e495]: "\"1994-09-11 23:59:59\""
+                                - generic [ref=e496]: ","
+                                - generic [ref=e498]: "\"reviewScore\""
+                                - generic [ref=e499]: ":"
+                                - generic [ref=e500]: "88"
+                                - generic [ref=e501]: ","
+                                - generic [ref=e503]: "\"category\""
+                                - generic [ref=e504]: ":"
+                                - generic [ref=e505]: "\"Strategy\""
+                                - generic [ref=e506]: ","
+                                - generic [ref=e508]: "\"rating\""
+                                - generic [ref=e509]: ":"
+                                - generic [ref=e510]: "\"Universal\""
+                                - text: "}, {"
+                                - generic [ref=e512]: "\"id\""
+                                - generic [ref=e513]: ":"
+                                - generic [ref=e514]: "9"
+                                - generic [ref=e515]: ","
+                                - generic [ref=e517]: "\"name\""
+                                - generic [ref=e518]: ":"
+                                - generic [ref=e519]: "\"Final Fantasy VII\""
+                                - generic [ref=e520]: ","
+                                - generic [ref=e522]: "\"releaseDate\""
+                                - generic [ref=e523]: ":"
+                                - generic [ref=e524]: "\"1997-08-20 23:59:59\""
+                                - generic [ref=e525]: ","
+                                - generic [ref=e527]: "\"reviewScore\""
+                                - generic [ref=e528]: ":"
+                                - generic [ref=e529]: "97"
+                                - generic [ref=e530]: ","
+                                - generic [ref=e532]: "\"category\""
+                                - generic [ref=e533]: ":"
+                                - generic [ref=e534]: "\"RPG\""
+                                - generic [ref=e535]: ","
+                                - generic [ref=e537]: "\"rating\""
+                                - generic [ref=e538]: ":"
+                                - generic [ref=e539]: "\"PG-13\""
+                                - text: "}, {"
+                                - generic [ref=e541]: "\"id\""
+                                - generic [ref=e542]: ":"
+                                - generic [ref=e543]: "10"
+                                - generic [ref=e544]: ","
+                                - generic [ref=e546]: "\"name\""
+                                - generic [ref=e547]: ":"
+                                - generic [ref=e548]: "\"Grand Theft Auto III\""
+                                - generic [ref=e549]: ","
+                                - generic [ref=e551]: "\"releaseDate\""
+                                - generic [ref=e552]: ":"
+                                - generic [ref=e553]: "\"2001-04-23 23:59:59\""
+                                - generic [ref=e554]: ","
+                                - generic [ref=e556]: "\"reviewScore\""
+                                - generic [ref=e557]: ":"
+                                - generic [ref=e558]: "90"
+                                - generic [ref=e559]: ","
+                                - generic [ref=e561]: "\"category\""
+                                - generic [ref=e562]: ":"
+                                - generic [ref=e563]: "\"Driving\""
+                                - generic [ref=e564]: ","
+                                - generic [ref=e566]: "\"rating\""
+                                - generic [ref=e567]: ":"
+                                - generic [ref=e568]: "\"Mature\""
+                                - text: "} ]"
+                          - generic [ref=e569]:
+                            - heading "Response headers" [level=5] [ref=e570]
+                            - generic [ref=e571]:
+                              - generic [ref=e572]: "cache-control: no-cache,no-store,max-age=0,must-revalidate"
+                              - generic [ref=e573]: "content-encoding: zstd"
+                              - generic [ref=e574]: "content-type: application/json"
+                              - generic [ref=e575]: "date: Tue,08 Sep 2026 04:38:49 GMT"
+                              - generic [ref=e576]: "expires: 0"
+                              - generic [ref=e577]: "fly-request-id: 01M1ZMZHQK60TTPZPERR8QR7B1-sin"
+                              - generic [ref=e578]: "pragma: no-cache"
+                              - generic [ref=e579]: "server: Fly/c06d5eb70e (2026-09-07)"
+                              - generic [ref=e580]: "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+                              - generic [ref=e581]: "via: 2 fly.io,2 fly.io"
+                              - generic [ref=e582]: "x-content-type-options: nosniff"
+                              - generic [ref=e583]: "x-frame-options: DENY"
+                              - generic [ref=e584]: "x-xss-protection: 1; mode=block"
+                - heading "Possible responses" [level=4] [ref=e169]
+                - region [ref=e171]:
+                  - rowgroup [ref=e172]:
+                    - row [ref=e173]:
+                      - cell "Code" [ref=e174]
+                      - cell "Description" [ref=e175]
+                      - cell "Links" [ref=e176]
+                  - rowgroup [ref=e177]:
+                    - row [ref=e178]:
+                      - cell "200" [ref=e179]
+                      - cell "OK Media type application/json Controls Accept header. Example Value" [ref=e180]:
+                        - paragraph [ref=e183]: OK
+                        - generic [ref=e185]:
+                          - generic [ref=e186]: Media type
+                          - combobox "Media Type" [ref=e188]:
+                            - option "application/json" [selected]
+                          - generic [ref=e189]:
+                            - text: Controls
+                            - code [ref=e190]: Accept
+                            - text: header.
+                        - generic [ref=e191]:
+                          - tablist [ref=e192]:
+                            - tab "Example Value" [selected] [ref=e193] [cursor=pointer]
+                            - tab "Schema" [ref=e194] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e195]:
+                            - code [ref=e199]:
+                              - generic [ref=e200]: "["
+                              - text: "{"
+                              - generic [ref=e202]: "\"category\""
+                              - generic [ref=e203]: ":"
+                              - generic [ref=e204]: "\"string\""
+                              - generic [ref=e205]: ","
+                              - generic [ref=e207]: "\"id\""
+                              - generic [ref=e208]: ":"
+                              - generic [ref=e209]: "0"
+                              - generic [ref=e210]: ","
+                              - generic [ref=e212]: "\"name\""
+                              - generic [ref=e213]: ":"
+                              - generic [ref=e214]: "\"string\""
+                              - generic [ref=e215]: ","
+                              - generic [ref=e217]: "\"rating\""
+                              - generic [ref=e218]: ":"
+                              - generic [ref=e219]: "\"string\""
+                              - generic [ref=e220]: ","
+                              - generic [ref=e222]: "\"releaseDate\""
+                              - generic [ref=e223]: ":"
+                              - generic [ref=e224]: "\"string\""
+                              - generic [ref=e225]: ","
+                              - generic [ref=e227]: "\"reviewScore\""
+                              - generic [ref=e228]: ":"
+                              - generic [ref=e229]: "0"
+                              - text: "} ]"
+                      - cell "No links" [ref=e230]
+          - generic [ref=e103] [cursor=pointer]:
+            - button "post /api/videogame" [ref=e104]:
+              - generic [ref=e105]: POST
+              - link "/api/videogame" [ref=e107]:
+                - /url: "#/api-video-games-controller/createUsingPOST_1"
+              - generic [ref=e109]: Create a video game
+            - button "authorization button unlocked" [ref=e112]
+          - 'button "get /api/videogame/{id}" [ref=e118] [cursor=pointer]':
+            - generic [ref=e119]: GET
+            - 'link "/api/videogame/{id}" [ref=e121]':
+              - /url: "#/api-video-games-controller/getVideoGameUsingGET_1"
+            - generic [ref=e123]: Get a video game
+          - generic [ref=e128] [cursor=pointer]:
+            - 'button "put /api/videogame/{id}" [ref=e129]':
+              - generic [ref=e130]: PUT
+              - 'link "/api/videogame/{id}" [ref=e132]':
+                - /url: "#/api-video-games-controller/updateUsingPUT_1"
+              - generic [ref=e134]: Update a video game
+            - button "authorization button unlocked" [ref=e137]
+          - generic [ref=e142] [cursor=pointer]:
+            - 'button "delete /api/videogame/{id}" [ref=e143]':
+              - generic [ref=e144]: DELETE
+              - 'link "/api/videogame/{id}" [ref=e146]':
+                - /url: "#/api-video-games-controller/deleteUsingDELETE_1"
+              - generic [ref=e148]: Delete a video game
+            - button "authorization button unlocked" [ref=e151]
+      - heading [level=3] [ref=e70] [cursor=pointer]:
+        - link "api-video-games-controller-v-2" [ref=e71]:
+          - /url: "#/api-video-games-controller-v-2"
+        - paragraph [ref=e74]: Api Video Games Controller V 2
+        - button "Expand operation" [ref=e75]
+    - heading [level=4] [ref=e81] [cursor=pointer]:
+      - button "Schemas" [ref=e82]

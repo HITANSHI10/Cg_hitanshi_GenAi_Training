@@ -1,0 +1,77 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - img "Swagger UI" [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Select a definition
+      - combobox "Select a definition" [ref=e12]:
+        - option "default" [selected]
+  - generic [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Video Game DB 2022 API 1.0.0 OAS3" [level=2] [ref=e20]:
+          - text: Video Game DB 2022 API
+          - generic [ref=e21]:
+            - generic [ref=e22]: 1.0.0
+            - generic [ref=e24]: OAS3
+        - link "https://videogamedb.uk/v3/api-docs" [ref=e26] [cursor=pointer]:
+          - /url: https://videogamedb.uk/v3/api-docs
+      - paragraph [ref=e30]: This is an API for a simple, fictional Video Game Database. The application is running in READ ONLY mode, which means any changes like creating, updating or deleting games does not get persisted.
+      - link "James Willett - Website" [ref=e33] [cursor=pointer]:
+        - /url: https://james-willett.com
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Servers
+        - combobox [ref=e39]:
+          - option "https://videogamedb.uk:443 - Inferred Url" [selected]
+      - button "Authorize" [ref=e41] [cursor=pointer]
+    - generic [ref=e47]:
+      - heading [level=3] [ref=e50] [cursor=pointer]:
+        - link "api-authentication-controller" [ref=e51]:
+          - /url: "#/api-authentication-controller"
+        - paragraph [ref=e54]: Api Authentication Controller
+        - button "Expand operation" [ref=e55]
+      - generic [ref=e59]:
+        - heading [level=3] [ref=e86] [cursor=pointer]:
+          - link "api-video-games-controller" [ref=e61]:
+            - /url: "#/api-video-games-controller"
+          - paragraph [ref=e64]: Api Video Games Controller
+          - button "Collapse operation" [expanded] [active] [ref=e87]
+        - generic [ref=e89]:
+          - button "get /api/videogame" [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: GET
+            - link "/api/videogame" [ref=e96]:
+              - /url: "#/api-video-games-controller/listVideoGamesUsingGET_1"
+            - generic [ref=e98]: List all video games
+          - generic [ref=e103] [cursor=pointer]:
+            - button "post /api/videogame" [ref=e104]:
+              - generic [ref=e105]: POST
+              - link "/api/videogame" [ref=e107]:
+                - /url: "#/api-video-games-controller/createUsingPOST_1"
+              - generic [ref=e109]: Create a video game
+            - button "authorization button unlocked" [ref=e112]
+          - 'button "get /api/videogame/{id}" [ref=e118] [cursor=pointer]':
+            - generic [ref=e119]: GET
+            - 'link "/api/videogame/{id}" [ref=e121]':
+              - /url: "#/api-video-games-controller/getVideoGameUsingGET_1"
+            - generic [ref=e123]: Get a video game
+          - generic [ref=e128] [cursor=pointer]:
+            - 'button "put /api/videogame/{id}" [ref=e129]':
+              - generic [ref=e130]: PUT
+              - 'link "/api/videogame/{id}" [ref=e132]':
+                - /url: "#/api-video-games-controller/updateUsingPUT_1"
+              - generic [ref=e134]: Update a video game
+            - button "authorization button unlocked" [ref=e137]
+          - generic [ref=e142] [cursor=pointer]:
+            - 'button "delete /api/videogame/{id}" [ref=e143]':
+              - generic [ref=e144]: DELETE
+              - 'link "/api/videogame/{id}" [ref=e146]':
+                - /url: "#/api-video-games-controller/deleteUsingDELETE_1"
+              - generic [ref=e148]: Delete a video game
+            - button "authorization button unlocked" [ref=e151]
+      - heading [level=3] [ref=e70] [cursor=pointer]:
+        - link "api-video-games-controller-v-2" [ref=e71]:
+          - /url: "#/api-video-games-controller-v-2"
+        - paragraph [ref=e74]: Api Video Games Controller V 2
+        - button "Expand operation" [ref=e75]
+    - heading [level=4] [ref=e81] [cursor=pointer]:
+      - button "Schemas" [ref=e82]

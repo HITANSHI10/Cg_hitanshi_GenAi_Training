@@ -1,0 +1,26 @@
+{
+  "servers": {
+    "playwright-test": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "run-test-mcp-server"
+      ]
+    },
+    "postman": {
+      "type": "http",
+      "url": "https://mcp.postman.com/minimal",
+      "headers": {
+        "Authorization": "Bearer PMAK-6a9fa5799287ca0001a59efa-51b9a17e1c9eeeeaf1de6ed9eee30b52f0"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "postman-api-key",
+      "type": "promptString",
+      "description": "Enter your Postman API key"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "staySearch": {
+    "valid": [
+      {
+        "destination": "Dubai",
+        "checkIn": "2026-10-15",
+        "checkOut": "2026-10-18",
+        "guests": 2,
+        "rooms": 1,
+        "nationality": "United Arab Emirates"
+      },
+      {
+        "destination": "Paris",
+        "checkIn": "2026-11-05",
+        "checkOut": "2026-11-09",
+        "guests": 3,
+        "rooms": 2,
+        "nationality": "France"
+      }
+    ],
+    "invalid": [
+      {
+        "destination": "",
+        "checkIn": "2026-10-15",
+        "checkOut": "2026-10-18",
+        "guests": 2,
+        "rooms": 1,
+        "nationality": "United Arab Emirates",
+        "expectedError": "Destination is required"
+      },
+      {
+        "destination": "Dubai",
+        "checkIn": "2026-10-18",
+        "checkOut": "2026-10-18",
+        "guests": 2,
+        "rooms": 1,
+        "nationality": "United Arab Emirates",
+        "expectedError": "Check-out must be after check-in"
+      },
+      {
+        "destination": "Dubai",
+        "checkIn": "2026-10-15",
+        "checkOut": "2026-10-18",
+        "guests": 0,
+        "rooms": 0,
+        "nationality": "",
+        "expectedError": "Invalid occupancy or nationality"
+      }
+    ],
+    "boundary": [
+      {
+        "destination": "London",
+        "checkIn": "2026-02-29",
+        "checkOut": "2026-03-01",
+        "guests": 1,
+        "rooms": 1,
+        "nationality": "United Kingdom"
+      },
+      {
+        "destination": "Tokyo",
+        "checkIn": "2026-12-31",
+        "checkOut": "2027-01-02",
+        "guests": 5,
+        "rooms": 2,
+        "nationality": "Japan"
+      },
+      {
+        "destination": "A",
+        "checkIn": "2026-10-15",
+        "checkOut": "2026-10-16",
+        "guests": 1,
+        "rooms": 1,
+        "nationality": "United States"
+      }
+    ],
+    "noResults": {
+      "destination": "Atlantis City",
+      "checkIn": "2026-10-15",
+      "checkOut": "2026-10-18",
+      "guests": 2,
+      "rooms": 1,
+      "nationality": "United States"
+    },
+    "specialCharacters": {
+      "destination": "São Paulo!",
+      "checkIn": "2026-10-15",
+      "checkOut": "2026-10-18",
+      "guests": 2,
+      "rooms": 1,
+      "nationality": "Brazil"
+    }
+  },
+  "flightSearch": {
+    "valid": [
+      {
+        "from": "Dubai",
+        "to": "London",
+        "departDate": "2026-10-20",
+        "returnDate": "2026-10-27",
+        "passengers": 2
+      },
+      {
+        "from": "Paris",
+        "to": "New York",
+        "departDate": "2026-11-10",
+        "returnDate": "2026-11-18",
+        "passengers": 1
+      }
+    ],
+    "invalid": [
+      {
+        "from": "",
+        "to": "London",
+        "departDate": "2026-10-20",
+        "returnDate": "2026-10-27",
+        "passengers": 1,
+        "expectedError": "Departure city is required"
+      },
+      {
+        "from": "Dubai",
+        "to": "London",
+        "departDate": "2026-10-27",
+        "returnDate": "2026-10-27",
+        "passengers": 0,
+        "expectedError": "Invalid passenger count or date range"
+      }
+    ],
+    "noResults": {
+      "from": "Berlin",
+      "to": "Mars",
+      "departDate": "2026-10-20",
+      "returnDate": "2026-10-27",
+      "passengers": 1
+    }
+  }
+}

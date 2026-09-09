@@ -1,0 +1,35 @@
+{
+  "servers": {
+    "playwright-test": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "run-test-mcp-server"
+      ]
+    },
+   
+        "excel": {
+            "command": "cmd",
+            "args": ["/c", "npx", "--yes", "@negokaz/excel-mcp-server"],
+            "env": {
+                "EXCEL_MCP_PAGING_CELLS_LIMIT": "4000"
+            }
+    },
+     "jira": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v2/mcp"
+    },
+
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN":"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"
+      }
+    }
+ 
+  },
+  
+  "inputs": []
+}

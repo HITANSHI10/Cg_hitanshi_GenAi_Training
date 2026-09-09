@@ -1,0 +1,164 @@
+{
+  "travellers": {
+    "validSingle": [
+      {
+        "title": "Mr",
+        "firstName": "Alex",
+        "lastName": "Morgan",
+        "email": "alex.morgan@example.com",
+        "phone": "+1234567890"
+      }
+    ],
+    "validMultiple": [
+      {
+        "title": "Mr",
+        "firstName": "Alex",
+        "lastName": "Morgan",
+        "email": "alex.morgan@example.com",
+        "phone": "+1234567890"
+      },
+      {
+        "title": "Ms",
+        "firstName": "Priya",
+        "lastName": "Sharma",
+        "email": "priya.sharma@example.com",
+        "phone": "+1987654321"
+      }
+    ],
+    "invalid": [
+      {
+        "title": "",
+        "firstName": "",
+        "lastName": "",
+        "email": "not-an-email",
+        "phone": ""
+      },
+      {
+        "title": "Mr",
+        "firstName": "A",
+        "lastName": "M!@#",
+        "email": "",
+        "phone": "+123"
+      }
+    ],
+    "boundary": [
+      {
+        "title": "Mr",
+        "firstName": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "lastName": "Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "email": "very.long.name+tag+withmanycharacters@example.com",
+        "phone": "+15550000000"
+      }
+    ]
+  },
+  "payment": {
+    "valid": {
+      "paymentMethod": "sandbox card",
+      "cardholderName": "Alex Morgan",
+      "cardNumber": "4111111111111111",
+      "expiry": "12/30",
+      "cvv": "123",
+      "termsAccepted": true
+    },
+    "invalid": [
+      {
+        "paymentMethod": "sandbox card",
+        "cardholderName": "Alex Morgan",
+        "cardNumber": "4111111111111112",
+        "expiry": "12/24",
+        "cvv": "12",
+        "termsAccepted": true,
+        "expectedError": "Payment declined"
+      },
+      {
+        "paymentMethod": "sandbox card",
+        "cardholderName": "Alex Morgan",
+        "cardNumber": "4111111111111111",
+        "expiry": "12/30",
+        "cvv": "123",
+        "termsAccepted": false,
+        "expectedError": "Terms must be accepted"
+      }
+    ]
+  },
+  "auth": {
+    "customer": {
+      "validLogin": {
+        "email": "customer@example.com",
+        "password": "Password123!"
+      },
+      "invalidLogin": [
+        {
+          "email": "",
+          "password": "Password123!",
+          "expectedError": "Email is required"
+        },
+        {
+          "email": "customer@example.com",
+          "password": "",
+          "expectedError": "Password is required"
+        },
+        {
+          "email": "missing@example.com",
+          "password": "WrongPass123!",
+          "expectedError": "Invalid credentials"
+        }
+      ],
+      "validSignup": {
+        "firstName": "Dana",
+        "lastName": "Lee",
+        "email": "dana.lee@example.com",
+        "password": "Password123!",
+        "confirmPassword": "Password123!"
+      },
+      "invalidSignup": [
+        {
+          "firstName": "",
+          "lastName": "Lee",
+          "email": "bad-email",
+          "password": "short",
+          "confirmPassword": "short",
+          "expectedError": "Please enter valid registration details"
+        }
+      ]
+    },
+    "agent": {
+      "validSignup": {
+        "companyName": "BrightPath Travel",
+        "firstName": "Michael",
+        "lastName": "Jones",
+        "email": "michael@brightpath.example",
+        "password": "AgentPass123!",
+        "confirmPassword": "AgentPass123!"
+      },
+      "invalidSignup": [
+        {
+          "companyName": "",
+          "firstName": "",
+          "lastName": "Jones",
+          "email": "",
+          "password": "123",
+          "confirmPassword": "456",
+          "expectedError": "Required fields missing or invalid"
+        }
+      ]
+    }
+  },
+  "refundRequest": {
+    "valid": {
+      "bookingReference": "BK-20261015-001",
+      "serviceDetails": "Dubai Hotel Stay",
+      "cancellationReason": "Travel dates changed",
+      "email": "support@example.com"
+    },
+    "invalid": [
+      {
+        "bookingReference": "",
+        "serviceDetails": "",
+        "cancellationReason": "",
+        "email": "not-an-email",
+        "expectedError": "Booking reference, service details, and reason are required"
+      }
+    ]
+  }
+}
